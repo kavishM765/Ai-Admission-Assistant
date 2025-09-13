@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Based Admission Assistant</title>
+  <!-- css -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- favicon -->
+   <link rel="icon" href="./image/favicontwo.jpg" type="image/x-icon">
+</head>
+<body>
+    <!-- container to wrap all -->
+  <div class="container">
+    <div class="navi">
+      <h1 title="Welcome">AI Based Admission Assistant</h1>
+    </div>
+<!-- section -->
+    <section>
+      <h2 title="Fill out the entire details to move on.">Enter Your Details Here</h2>
+      <!-- form to collect the details -->
+      <form id="collegeForm">
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Email" required>
+
+        <label for="course">Course:</label>
+        <input type="text" name="course" placeholder="Course" required>
+
+        <label for="marks">Marks:</label>
+        <textarea name="message" placeholder="Enter Your Marks if Available or Expected Marks" required></textarea>
+
+        <button type="submit" title="Submit">Submit</button>
+        <!-- last status -->
+        <div id="status"></div>
+      </form>
+    </section>
+    <!-- js -->
+     <script src="./script.js"></script>
+  </div>
+</body>
+</html>

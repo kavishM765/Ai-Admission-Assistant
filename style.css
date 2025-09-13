@@ -1,0 +1,137 @@
+/* For Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #3a3d98, #24243e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {    
+  width: 100%;
+  max-width: 420px;   
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+/* For H1 tag */
+.navi {
+  text-align: center;
+  background: #073382;
+  padding: 8px 12px;       
+  border-radius: 8px;
+  font-size: 10px;       
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: white;
+  white-space: nowrap;     
+  overflow: hidden;        
+  text-overflow: ellipsis; 
+  border-radius: 30px;
+}
+/* For h2 tag */
+section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1rem;  
+}
+/* form  */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+label {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Inputs & Textarea */
+input,
+textarea {
+  width: 100%;
+  padding: 8px;   
+  margin-top: 5px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+  background: #f8f8f8;
+  color: #333;
+  box-sizing: border-box;
+}
+input:hover{
+    outline: 4px solid #333 ;
+    background-color: #e1dcdc;
+}
+textarea:hover{
+    outline: 4px solid #333 ;
+    background-color: #e1dcdc;
+}
+/* Textarea */
+textarea {
+  min-height: 1px; 
+  max-height: 50px; 
+  resize: vertical;
+}
+
+/* Button */
+button {
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #28a745;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/* hover */
+button:hover {
+  background: #218838;
+  transform: translateX(-4px);
+  transform: translateY(3px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+/* Status - for Submitted response */
+#status {
+  margin-top: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+/* For mobile*/
+@media (max-width: 450px) {
+  .container {
+    max-width: 95%;
+    padding: 15px;
+  }
+  .navi {
+    font-size: 1rem;
+  }
+}
+/* tab */
+@media (min-width: 600px) and (max-width: 900px) {
+  .container {
+    max-width: 600px;
+    padding: 25px;
+  }
+  .navi {
+    font-size: 1.3rem;
+  }
+  section h2 {
+    font-size: 1.1rem;
+  }
+}
